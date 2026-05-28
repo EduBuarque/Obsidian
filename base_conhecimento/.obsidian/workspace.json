@@ -1,0 +1,221 @@
+{
+  "main": {
+    "id": "80ffe857258344e9",
+    "type": "split",
+    "children": [
+      {
+        "id": "69577bf009a29cf1",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "62cc7b1b5f64ed2a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "wiki/log.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "log"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "0449d4c46e9c50e9",
+    "type": "split",
+    "children": [
+      {
+        "id": "67c3456a24e2c35b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "dc3a59c9bfa20769",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Explorador de arquivos"
+            }
+          },
+          {
+            "id": "231c1fe61fa05e2f",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Procurar"
+            }
+          },
+          {
+            "id": "0b8f2e5b0e061f3d",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Marcadores"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "e6fd6069462f1477",
+    "type": "split",
+    "children": [
+      {
+        "id": "9bb1a98012816fba",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "accad265706e351a",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Links inversos"
+            }
+          },
+          {
+            "id": "7d208d598e2d15a7",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Links de saída"
+            }
+          },
+          {
+            "id": "b75d143b68d560b9",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Etiquetas"
+            }
+          },
+          {
+            "id": "9624db9b730b468d",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "Todas as propriedades"
+            }
+          },
+          {
+            "id": "e9dfbc5526166418",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Sumário"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Abrir a troca rápida": false,
+      "graph:Abrir visualização em gráfico": false,
+      "canvas:Criar novo canvas": false,
+      "daily-notes:Abrir a nota de hoje": false,
+      "templates:Inserir modelo": false,
+      "command-palette:Abrir paleta de comandos": false,
+      "bases:Criar nova base": false
+    }
+  },
+  "active": "62cc7b1b5f64ed2a",
+  "lastOpenFiles": [
+    "wiki/index.md",
+    "wiki/core-knowledge/Processo-KDD.md",
+    "wiki/core-knowledge/Data-Mining-Tecnicas.md",
+    "raw/core-knowledge/Data Mining - Técnicas.md",
+    "wiki_search_index.db-journal",
+    "Clippings/Knowledge Discovery in Databases 9 Steps to Success.md",
+    "raw/core-knowledge/Knowledge Discovery in Databases 9 Steps to Success.md",
+    "GKE_RULES.md",
+    "wiki/log.md",
+    "raw/core-knowledge/Deep Learning Book-Cap 21 - Afinal, Por Que a Regularização Ajuda a Reduzir o Overfitting.md",
+    "wiki_search_index.db",
+    "search.py",
+    "Equipe DSA.md",
+    "wiki/core-knowledge/Arvores-de-Decisao.md",
+    "wiki/core-knowledge/Kernel-Trick-e-SVM.md",
+    "raw/core-knowledge/O que é Regularização_IBM.md",
+    "raw/core-knowledge/O que são classificadores Naïve Bayes_.md",
+    "raw/core-knowledge/The Kernel Trick in Machine Learning.md",
+    "raw/core-knowledge/Kernel Trick Explained SVMs and Nonlinear Patterns.md",
+    "raw/core-knowledge/Decision tree methods_ applications for classification and prediction.md",
+    "raw/core-knowledge/A Gentle Introduction to Bayes Theorem for Machine Learning.md",
+    "Clippings/A Gentle Introduction to Bayes Theorem for Machine Learning.md",
+    "wiki/core-knowledge/Regularizacao.md",
+    "wiki/core-knowledge/Teorema-de-Bayes.md",
+    "Clippings/Kernel Trick Explained SVMs and Nonlinear Patterns.md",
+    "Clippings/The Kernel Trick in Machine Learning.md",
+    "Clippings/Kernel Trick in Support Vector Classification.md",
+    "Clipping",
+    "Clippings/O que é Regularização_IBM.md",
+    "Clippings",
+    "requirements.txt",
+    "wiki/logbook",
+    "wiki/core-knowledge",
+    "wiki",
+    "raw/logbook"
+  ]
+}
