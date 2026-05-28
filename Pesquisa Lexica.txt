@@ -1,0 +1,8 @@
+# Para atualizar o índice com novas notas adicionadas:
+.venv\Scripts\python search.py --index
+
+# Para realizar pesquisas rápidas:
+.venv\Scripts\python search.py --query "sua pergunta aqui"
+
+# Para ver scores detalhados (postos RRF, BM25 e Cosseno):
+.venv\Scripts\python search.py --query "sua pergunta aqui" --verbose
