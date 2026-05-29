@@ -109,13 +109,16 @@ Para evitar a fragmentação do conhecimento (ex: ter páginas separadas para "E
     *   Se um sinônimo for encontrado, o novo termo deve ser tratado como um **alias**.
     *   O novo arquivo processado deve conter um link para o **Conceito Mestre** existente.
     *   O campo `keywords` ou um campo `aliases` no YAML da página mestre deve ser atualizado para incluir o novo termo.
-3.  **Unificação de Conteúdo:** Se o novo arquivo contiver informações complementares sobre o conceito mestre, o GKE deve anexar essas informações à página mestre existente, em vez de criar uma duplicata.
+3.  **Unificação de Conteúdo & Gestão de Complexidade:** Se o novo arquivo contiver informações complementares sobre o conceito mestre, o GKE deve:
+    *   Se a informação for um refinamento direto da definição, atualizar o núcleo técnico.
+    *   Se a informação for um achado contextual ou aplicação prática, adicioná-la à seção **"Notas de Evolução & Contribuições"**.
+    *   **Nota de Eficiência:** Para evitar sobrecarga, a seção de "Notas de Evolução" é opcional e deve ser implementada apenas em conceitos que apresentem alta densidade de novos contextos (múltiplas fontes/logbooks), mantendo a simplicidade dos conceitos fundamentais.
 
 #### 3.4 Protocolo de Rastreabilidade de Procedência (Provenance Tracking)
-Para garantir que a origem da informação seja clara e evitar links de conceitos "soltos":
+Para garantir que a origem da informação seja clara e permitir navegação direta à fonte original:
 
-1.  **Associação de Fonte:** Ao mencionar um conceito técnico em um texto, o GKE deve verificar se existem arquivos na `raw/` que servem como base teórica para aquele termo.
-2.  **Citação Contextual:** Sempre que possível, a referência deve ser inserida de forma contextual no corpo do texto (ex: `[[Conceito]][[Fonte]] para [contexto]`), garantindo que o leitor saiba de onde aquela afirmação derivou.
+1.  **Associação de Fonte & Link de Retorno:** Todo arquivo gerado na `wiki/` deve possuir o campo `original_source` no YAML e, no final do corpo do arquivo, uma seção dedicada **"## 📂 Fonte Original"** (ou **"## 📂 Fontes Originais"** se múltiplo) contendo Wiki-links (`[[...]]`) clicáveis para as fontes correspondentes na pasta `raw/` ou `Clippings/`. Isso viabiliza a auditoria rápida e a consulta aos detalhes originais diretamente pela interface do Obsidian.
+2.  **Citação Contextual:** Sempre que possível, referências a fontes secundárias ou complementares devem ser inseridas de forma contextual no corpo do texto (ex: `[[Conceito]][[Fonte]] para [contexto]`), garantindo que o leitor saiba de onde aquela afirmação derivou.
 
 
 > 🔴 **OBRIGATÓRIO:** Todo arquivo processado da pasta `Clippings/` **deve ser movido** para `raw/core-knowledge/` ao final do ciclo de ingestão. A pasta `Clippings/` deve sempre refletir apenas o **backlog pendente** de processamento — nunca arquivos já sintetizados na `wiki/`.
@@ -128,7 +131,7 @@ Todo arquivo `.md` na `wiki/` deve obrigatoriamente possuir o seguinte bloco no 
 ---
 tags: [core/architecture, core/data-science, logbook/analysis-in-progress, logbook/decision]
 created: YYYY-MM-DD
-sources: [links ou caminhos para arquivos em /raw]
+original_source: [caminho/para/arquivo/em/raw/ou/clippings]
 author: Gemini Synthesis
 keywords: [palavra-chave 1, palavra-chave 2]
 ---

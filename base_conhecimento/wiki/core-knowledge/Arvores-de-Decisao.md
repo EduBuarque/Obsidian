@@ -1,8 +1,8 @@
 ---
 tags: [core/machine-learning, core/classificacao, core/data-mining]
 created: 2026-05-27
-sources:
-  - "Clippings/Decision tree methods_ applications for classification and prediction.md"
+original_source:
+  - "raw/core-knowledge/Decision tree methods_ applications for classification and prediction.md"
 author: Gemini Synthesis
 keywords: [arvore de decisao, CART, C4.5, CHAID, QUEST, classificacao, predicao, data mining, overfitting, poda]
 ---
@@ -146,3 +146,8 @@ Um estudo de coorte de 4 anos (Batterham et al., 2009) utilizou CART para identi
 ## Referências Originais
 
 - Yan-yan Song, Ying Lu — *"Decision tree methods: applications for classification and prediction"* — *Shanghai Archives of Psychiatry*, 2015. PMC4466856.
+
+---
+
+## 📂 Fonte Original
+- [[raw/core-knowledge/Decision tree methods_ applications for classification and prediction.md]]

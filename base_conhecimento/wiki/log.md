@@ -81,3 +81,17 @@ Histórico, tipo append-only, rastreando as ações do Gemini Knowledge Engine.
 
 ### Observações / Auditoria de Integridade
 - A auditoria de integridade varreu a base e confirmou que a nova nota está integrada de forma bidirecional. Não foram encontradas notas órfãs ou links quebrados.
+
+---
+
+## [2026-05-29] Upgrade | Reestruturação de Metadados e Rastreabilidade
+
+### Atualizações de Diretrizes (GKE_RULES.md)
+- **Seção 3.4 (Rastreabilidade de Procedência):** Atualizada para formalizar a exigência do link de retorno direto à fonte original via campo `original_source` nos metadados.
+- **Seção 4.1 (Schema de Metadados):** Alteração do campo de `sources` para `original_source` para refletir um link estruturado, garantindo portabilidade e auditoria direta dos resumos sintetizados.
+
+### Reprocessamento da Wiki
+- Atualização em lote de todos os arquivos em `/wiki/core-knowledge/` (`Teorema-de-Bayes.md`, `Data-Mining-Tecnicas.md`, `Processo-KDD.md`, `Arvores-de-Decisao.md`, `Kernel-Trick-e-SVM.md`, `Regularizacao.md`) para substituir a tag `sources` por `original_source`, referenciando corretamente a contrapartida original na pasta `raw/`.
+
+### Observações / Auditoria de Integridade
+- Todas as páginas da wiki agora possuem links diretos de retorno funcionais para suas fontes originais em `raw/`, em conformidade total com as regras atualizadas.

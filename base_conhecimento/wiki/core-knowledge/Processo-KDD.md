@@ -1,7 +1,8 @@
 ---
 tags: [core/data-mining, core/metodologia]
 created: 2026-05-28
-sources: [raw/core-knowledge/Knowledge Discovery in Databases 9 Steps to Success.md]
+original_source:
+  - "raw/core-knowledge/Knowledge Discovery in Databases 9 Steps to Success.md"
 author: Gemini Synthesis
 keywords: [kdd, descoberta de conhecimento, mineracao de dados, pre-processamento]
 ---
@@ -83,3 +84,8 @@ Integração do modelo ou do padrão descoberto em sistemas operacionais ativos 
 *   **Metodologias Alternativas:** O KDD possui grande similaridade e correlação direta com a metodologia CRISP-DM, detalhada em [[Data-Mining-Tecnicas]].
 *   **Algoritmos de Classificação:** As árvores de decisão descritas em [[Arvores-de-Decisao]] são frequentemente utilizadas no Passo 6 para priorizar a interpretabilidade do conhecimento descoberto.
 *   **Ajuste de Parâmetros:** O controle de overfitting no Passo 7 frequentemente envolve a aplicação de termos de penalização estudados em [[Regularizacao]].
+
+---
+
+## 📂 Fonte Original
+- [[raw/core-knowledge/Knowledge Discovery in Databases 9 Steps to Success.md]]

@@ -1,13 +1,13 @@
 ---
 tags: [core/machine-learning, core/classificacao, core/geometria]
 created: 2026-05-27
-sources:
-  - "Clippings/Kernel Trick Explained SVMs and Nonlinear Patterns.md"
-  - "Clippings/The Kernel Trick in Machine Learning.md"
+original_source:
+  - "raw/core-knowledge/Kernel Trick Explained SVMs and Nonlinear Patterns.md"
+  - "raw/core-knowledge/The Kernel Trick in Machine Learning.md"
 author: Gemini Synthesis
 keywords: [kernel trick, SVM, support vector machine, separabilidade linear, hiperplano, RBF, produto interno, espaco de alta dimensao]
 ---
-
+	
 # Kernel Trick e Support Vector Machines (SVM)
 
 ## O Problema: Dados Não Linearmente Separáveis
@@ -154,3 +154,9 @@ Dados em dois círculos concêntricos são **impossíveis de separar linearmente
 
 - Dario Radečić — *"Kernel Trick Explained: SVMs and Nonlinear Patterns"* — DataCamp, 2026
 - Omar Elmofty — *"The Kernel Trick in Machine Learning"* — Medium, 2025
+
+---
+
+## 📂 Fontes Originais
+- [[raw/core-knowledge/Kernel Trick Explained SVMs and Nonlinear Patterns.md]]
+- [[raw/core-knowledge/The Kernel Trick in Machine Learning.md]]

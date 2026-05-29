@@ -1,10 +1,26 @@
 ---
-tags: [core/data-mining, core/machine-learning, core/metodologia, core/classificacao, core/clustering]
+tags:
+  - core/data-mining
+  - core/machine-learning
+  - core/metodologia
+  - core/classificacao
+  - core/clustering
 created: 2026-05-27
-sources:
-  - "raw/core-knowledge/Data Mining - Técnicas.md"
+original_source:
+  - raw/core-knowledge/Data Mining - Técnicas.md
 author: Gemini Synthesis
-keywords: [data mining, mineracao de dados, CRISP-DM, classificacao, regressao, clustering, associacao, anomalias, reducao dimensionalidade, series temporais, MLOps]
+keywords:
+  - data mining
+  - mineracao de dados
+  - CRISP-DM
+  - classificacao
+  - regressao
+  - clustering
+  - associacao
+  - anomalias
+  - reducao dimensionalidade
+  - series temporais
+  - MLOps
 ---
 # Data Mining — Técnicas e Metodologia (CRISP-DM)
 
@@ -225,3 +241,8 @@ O CRISP-DM é extremamente relevante, mas projetos modernos exigem extensões:
 ## Referências Originais
 
 - Material de construção própria — *"Data Mining - Técnicas.md"* — `raw/core-knowledge/`
+
+---
+
+## 📂 Fonte Original
+- [[raw/core-knowledge/Data Mining - Técnicas.md]]

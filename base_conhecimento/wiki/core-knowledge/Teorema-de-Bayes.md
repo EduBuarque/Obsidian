@@ -1,9 +1,9 @@
 ---
 tags: [core/probabilidade, core/machine-learning, core/classificacao]
 created: 2026-05-27
-sources:
-  - "Clippings/A Gentle Introduction to Bayes Theorem for Machine Learning.md"
-  - "Clippings/O que são classificadores Naïve Bayes_.md"
+original_source:
+  - "raw/core-knowledge/A Gentle Introduction to Bayes Theorem for Machine Learning.md"
+  - "raw/core-knowledge/O que são classificadores Naïve Bayes_.md"
 author: Gemini Synthesis
 keywords: [teorema de bayes, probabilidade condicional, naive bayes, classificacao bayesiana, MAP, priori, posteriori]
 ---
@@ -90,10 +90,10 @@ O teorema se conecta diretamente às métricas de classificação:
 
 ```mermaid
 flowchart LR
-    A[P(B|A) = TPR = Sensibilidade] --> B[Bayes Theorem]
-    C[P(A) = Positive Class Rate] --> B
-    D[P(B|¬A) = FPR = 1 - Especificidade] --> B
-    B --> E[P(A|B) = Posterior = Precisão = PPV]
+    A["P(B|A) = TPR = Sensibilidade"] --> B[Bayes Theorem]
+    C["P(A) = Positive Class Rate"] --> B
+    D["P(B|¬A) = FPR = 1 - Especificidade"] --> B
+    B --> E["P(A|B) = Posterior = Precisão = PPV"]
 ```
 
 - **TPR (True Positive Rate)** → Sensibilidade
@@ -185,3 +185,9 @@ Modelos gráficos que capturam explicitamente as **dependências condicionais** 
 
 - Jason Brownlee — *A Gentle Introduction to Bayes Theorem for Machine Learning* (machinelearningmastery.com, 2019)
 - IBM Think — *O que são classificadores Naïve Bayes?* (ibm.com/br-pt)
+
+---
+
+## 📂 Fontes Originais
+- [[raw/core-knowledge/A Gentle Introduction to Bayes Theorem for Machine Learning.md]]
+- [[raw/core-knowledge/O que são classificadores Naïve Bayes_.md]]

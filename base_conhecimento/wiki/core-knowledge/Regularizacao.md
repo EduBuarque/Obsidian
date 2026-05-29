@@ -1,9 +1,9 @@
 ---
 tags: [core/machine-learning, core/deep-learning, core/otimizacao]
 created: 2026-05-27
-sources:
-  - "Clippings/Deep Learning Book-Cap 21 - Afinal, Por Que a Regularização Ajuda a Reduzir o Overfitting.md"
-  - "Clippings/O que é Regularização_IBM.md"
+original_source:
+  - "raw/core-knowledge/Deep Learning Book-Cap 21 - Afinal, Por Que a Regularização Ajuda a Reduzir o Overfitting.md"
+  - "raw/core-knowledge/O que é Regularização_IBM.md"
 author: Gemini Synthesis
 keywords: [regularizacao, overfitting, underfitting, L1, L2, dropout, bias-variance tradeoff, generalizacao, pesos]
 ---
@@ -153,3 +153,9 @@ A regularização, especialmente **L2 (Ridge)**, também combate a **multicoline
 
 - Equipe DSA — *"Capítulo 21 - Afinal, Por Que a Regularização Ajuda a Reduzir o Overfitting?"* — deeplearningbook.com.br, 2025
 - IBM Think — *"O que é Regularização?"* — ibm.com/br-pt
+
+---
+
+## 📂 Fontes Originais
+- [[raw/core-knowledge/Deep Learning Book-Cap 21 - Afinal, Por Que a Regularização Ajuda a Reduzir o Overfitting.md]]
+- [[raw/core-knowledge/O que é Regularização_IBM.md]]
