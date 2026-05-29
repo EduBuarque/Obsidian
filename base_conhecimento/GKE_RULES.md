@@ -48,12 +48,13 @@ graph TD
     %% Fase 3: Integração e Conexão
     subgraph Conexao [Fase 3: Integração de Rede]
         K --> L[Análise de Links Cruzados: Law of Associative Linking]
-        L --> M[Promoção: Tag -> Página de Conceito?]
-        M -- Sim --> N[Criar novo arquivo no core-knowledge]
+        L --> M[Promoção de Conceito?]
+        M -- Sim --> N[Sintetizar Página de Conceito no core-knowledge]
         M -- Não --> O[Apenas atualizar links existentes]
         N --> P[Atualização do Index e Log]
         O --> P
     end
+
 
     %% Fase 4: Manutenção
     subgraph Manutencao [Fase 4: Auditoria de Integridade]
@@ -86,16 +87,36 @@ Para garantir a integridade e evitar reprocessamento desnecessário, o GKE não 
     1.  O arquivo não constar no registro de hashes.
     2.  O hash atual for diferente do hash registrado (indicando alteração no conteúdo).
 
-1. O Usuário salva marcações na pasta `Clippings/` (gerada pela extensão) ou deposita arquivos manualmente na pasta respectiva dentro de `raw/`.
-2. O Usuário solicita que o GKE processe as novidades.
-3. O GKE processa **primeiro a pasta `Clippings/`** (maior prioridade) e, em seguida, a pasta `raw/`.
-4. O GKE lê os arquivos, traduz/sintetiza para pt-BR e cria/atualiza os arquivos Markdown correspondentes em `wiki/`.
-5. **Análise de Referências**: Ao finalizar a criação dos Markdowns, o GKE **obrigatoriamente** inicia uma ferramenta/análise lógica varrendo a base para criar e atualizar os links cruzados entre os temas recém-processados e o restante da wiki.
-6. O GKE atualiza o `wiki/index.md` e registra a ação no `wiki/log.md`.
-7. **Arquivamento pós-processamento**: Após o processamento bem-sucedido de cada arquivo da pasta `Clippings/`, o GKE **move o arquivo** para `raw/core-knowledge/`. Isso garante que a fonte original seja preservada como registro imutável e que a pasta `Clippings/` contenha apenas itens pendentes de ingestão.
+#### 3.2 Protocolo de Promoção de Conceitos (Knowledge Expansion)
+Para transformar uma taxonomia (tags) em uma ontologia (conceitos estruturados), o GKE deve seguir este protocolo:
 
+1.  **Gatilho de Promoção:** Um termo (tag) será promovido a uma página de `core-knowledge` quando atingir a **3ª aparição** em arquivos distintos ou for identificado como um conceito central em um novo processamento.
+2.  **Processo de Síntese (Não apenas criação):** A promoção não deve criar páginas vazias. O GKE deve:
+    *   Consolidar as definições e contextos extraídos das fontes originais.
+    *   **Expandir o conhecimento:** Utilizar sua base de conhecimento para fornecer uma explicação técnica completa e robusta.
+    *   **Visualização:** Incluir obrigatoriamente um diagrama **Mermaid.js** que ilustre a mecânica ou topologia do conceito.
+3.  **Estrutura Obrigatória da Página Promovida:**
+    *   **Definição Técnica:** Explicação clara e estruturada em pt-BR.
+    *   **Mecânica/Processo:** Representação visual via Mermaid.js.
+    *   **Rastreabilidade:** Links para os arquivos em `raw/` que fundamentaram o conceito.
+    *   **Conexões Empíricas:** Links para todos os projetos no `logbook/` que aplicam esse conceito.
 
-### 3.1 Regra de Arquivamento de Clippings
+#### 3.3 Protocolo de Unificação de Entidades (Entity Resolution)
+Para evitar a fragmentação do conhecimento (ex: ter páginas separadas para "EDA" e "Exploratory Data Analysis"), o GKE deve aplicar a normalização semântica:
+
+1.  **Busca de Sinônimos:** Antes de criar ou promover um novo conceito, o GKE deve realizar uma busca por termos semanticamente equivalentes na `wiki/core-knowledge/`.
+2.  **Vínculo ao Nó Mestre:** 
+    *   Se um sinônimo for encontrado, o novo termo deve ser tratado como um **alias**.
+    *   O novo arquivo processado deve conter um link para o **Conceito Mestre** existente.
+    *   O campo `keywords` ou um campo `aliases` no YAML da página mestre deve ser atualizado para incluir o novo termo.
+3.  **Unificação de Conteúdo:** Se o novo arquivo contiver informações complementares sobre o conceito mestre, o GKE deve anexar essas informações à página mestre existente, em vez de criar uma duplicata.
+
+#### 3.4 Protocolo de Rastreabilidade de Procedência (Provenance Tracking)
+Para garantir que a origem da informação seja clara e evitar links de conceitos "soltos":
+
+1.  **Associação de Fonte:** Ao mencionar um conceito técnico em um texto, o GKE deve verificar se existem arquivos na `raw/` que servem como base teórica para aquele termo.
+2.  **Citação Contextual:** Sempre que possível, a referência deve ser inserida de forma contextual no corpo do texto (ex: `[[Conceito]][[Fonte]] para [contexto]`), garantindo que o leitor saiba de onde aquela afirmação derivou.
+
 
 > 🔴 **OBRIGATÓRIO:** Todo arquivo processado da pasta `Clippings/` **deve ser movido** para `raw/core-knowledge/` ao final do ciclo de ingestão. A pasta `Clippings/` deve sempre refletir apenas o **backlog pendente** de processamento — nunca arquivos já sintetizados na `wiki/`.
 

@@ -76,16 +76,16 @@ mindmap
 
 ### Técnicas Comuns
 
-| Técnica | Forças | Fraquezas | Cenários Indicados |
-|---|---|---|---|
-| **Árvores de Decisão** (CART, C4.5) | Alta interpretabilidade, visualização, aceita cat. e num. | Instável, tende ao overfitting | Crédito, saúde, sistemas explicáveis |
-| **Random Forest** | Excelente performance, reduz overfitting, robusto a ruído | Menor interpretabilidade, custo computacional | Score de risco, dados tabulares |
-| **Gradient Boosting** (XGBoost, LightGBM) | Altíssima performance, dados tabulares | Sensível a hiperparâmetros, pode overfittar sem [[Regularizacao]] | Finanças, fraude, churn |
-| **Naïve Bayes** | Muito rápido, funciona bem com texto | Assume independência (forte suposição) | Spam, NLP, categorização — ver [[Teorema-de-Bayes]] |
-| **Redes Neurais / Deep Learning** | Relações não lineares, imagem, áudio, texto | Baixa interpretabilidade, alto custo | Visão computacional, NLP |
-| **SVM** | Eficiente em alta dimensão, bom com poucos dados | Escala mal, ajuste complexo | Bioinformática, texto — ver [[Kernel-Trick-e-SVM]] |
-| **k-NN** | Simples, sem treinamento explícito | Predição lenta, sofre em alta dimensão | Sistemas pequenos, exploratório |
-| **Regressão Linear/Logística** | Interpretável, excelente baseline | Limitado em relações complexas | Modelos regulatórios, saúde, finanças |
+| Técnica                                   | Forças                                                    | Fraquezas                                                         | Cenários Indicados                                  |
+| ----------------------------------------- | --------------------------------------------------------- | ----------------------------------------------------------------- | --------------------------------------------------- |
+| **Árvores de Decisão** (CART, C4.5)       | Alta interpretabilidade, visualização, aceita cat. e num. | Instável, tende ao overfitting                                    | Crédito, saúde, sistemas explicáveis                |
+| **Random Forest**                         | Excelente performance, reduz overfitting, robusto a ruído | Menor interpretabilidade, custo computacional                     | Score de risco, dados tabulares                     |
+| **Gradient Boosting** (XGBoost, LightGBM) | Altíssima performance, dados tabulares                    | Sensível a hiperparâmetros, pode overfittar sem [[Regularizacao]] | Finanças, fraude, churn                             |
+| **Naïve Bayes**                           | Muito rápido, funciona bem com texto                      | Assume independência (forte suposição)                            | Spam, NLP, categorização — ver [[Teorema-de-Bayes]] |
+| **Redes Neurais / Deep Learning**         | Relações não lineares, imagem, áudio, texto               | Baixa interpretabilidade, alto custo                              | Visão computacional, NLP                            |
+| **SVM**                                   | Eficiente em alta dimensão, bom com poucos dados          | Escala mal, ajuste complexo                                       | Bioinformática, texto — ver [[Kernel-Trick-e-SVM]]  |
+| **k-NN**                                  | Simples, sem treinamento explícito                        | Predição lenta, sofre em alta dimensão                            | Sistemas pequenos, exploratório                     |
+| **Regressão Linear/Logística**            | Interpretável, excelente baseline                         | Limitado em relações complexas                                    | Modelos regulatórios, saúde, finanças               |
 
 ### Quando Priorizar Interpretabilidade vs. Performance
 

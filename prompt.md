@@ -96,3 +96,5 @@ Markdown & Formatting Standards: Frontmatter specs and Mermaid.js syntax templat
 Hybrid Search Specification: The deep-dive technical blueprint for the hybrid search engine CLI tool.
 
 Generate the GEMINI.md file layout now in projetos/knowledge_base.
+
+"Ative o protocolo GKE. Processe as novidades nas pastas Clippings/ e raw/ seguindo as regras do GKE_RULES.md. Aplique o Checksum Protocol para evitar duplicatas e siga o Ciclo de Vida do Conhecimento, incluindo a fase de Integração e a Auditoria de Integridade no final."
