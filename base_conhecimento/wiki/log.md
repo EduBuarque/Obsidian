@@ -95,3 +95,59 @@ Histórico, tipo append-only, rastreando as ações do Gemini Knowledge Engine.
 
 ### Observações / Auditoria de Integridade
 - Todas as páginas da wiki agora possuem links diretos de retorno funcionais para suas fontes originais em `raw/`, em conformidade total com as regras atualizadas.
+
+---
+
+## [2026-06-06] Ingest | Processamento de Clippings sobre Árvores de Decisão
+
+### Checksum Protocol (Verificação de Duplicatas)
+
+3 novos arquivos detectados em `Clippings/`. Nenhum constava no registro de hashes → processamento autorizado.
+
+| Arquivo | Hash SHA-256 | Presente no Log? |
+|---|---|---|
+| Decision Trees.md | 13061C6599C3F984C8D48301B56994E906F5553337531E313DC28475013DBF0F | ❌ Novo |
+| Árvores de decisão.md | 8CB9C63D96EDB7084C19B01A3968C78959EB9372EADA1E57227C16A7B7F86F4E | ❌ Novo |
+| Tutorial sobre classificação por árvore de decisão em Python.md | A61C158B214220E846D746004CAC46A51FDD88224F743D9E364B29DC7ECC4945 | ❌ Novo |
+
+### Fontes Processadas
+
+**Clippings/ (Prioridade Alta) — 3 arquivos:**
+| Arquivo | Tema | Destino na Wiki |
+|---|---|---|
+| Decision Trees.md | Documentação scikit-learn: implementação, classificação, regressão, valores ausentes, poda | `Arvores-de-Decisao.md` (atualizado) |
+| Árvores de decisão.md | Panorama completo: AID, CHAID, CART, ID3, C4.5, QUEST, CRUISE, GUIDE, ensembles, ensembles | `Arvores-de-Decisao.md` (atualizado) |
+| Tutorial sobre classificação por árvore de decisão em Python.md | Tutorial prático Python/scikit-learn: criação, otimização, visualização, decision stump | `Arvores-de-Decisao.md` (atualizado) |
+
+### Atualização em wiki/core-knowledge/
+
+1. `Arvores-de-Decisao.md` — Síntese expandida com:
+   - Formalização matemática (critérios de divisão, Gini, Entropia, MSE, MAE)
+   - Algoritmos single-tree completos (AID, CHAID, CART, ID3, C4.5, C5.0, QUEST, CRUISE, GUIDE)
+   - Métodos de ensemble (AdaBoost, Random Forest, Gradient Boosting, XGBoost)
+   - Árvores incrementais (VFDT, ITI) e ADTrees
+   - Implementação no Scikit-Learn (classificação, regressão, visualização, valores ausentes, poda cost-complexity, decision stump)
+   - Dicas de uso prático
+   - Campo `aliases` adicionado ao YAML
+   - Campo `updated` adicionado ao YAML
+
+### Links Cruzados Verificados / Atualizados
+- `Arvores-de-Decisao` ↔ `Data-Mining-Tecnicas` (ensemble como técnica) ✅
+- `Arvores-de-Decisao` ↔ `Regularizacao` (overfitting/poda) ✅
+- `Arvores-de-Decisao` ↔ `Teorema-de-Bayes` (entropia/informação) ✅
+- `Arvores-de-Decisao` ↔ `Data-Mining-Tecnicas` (CRISP-DM) ✅
+- `Arvores-de-Decisao` ↔ `Processo-KDD` (passo 6) ✅
+- `Arvores-de-Decisao` ↔ `Kernel-Trick-e-SVM` (classificação) ✅
+- Novo link adicional: `Arvores-de-Decisao` ↔ `Processo-KDD` (passo 7, ensembles)
+
+### Movimentação de Arquivos (Obrigatória)
+- `Clippings/Decision Trees.md` → `raw/core-knowledge/Decision Trees.md` ✅
+- `Clippings/Árvores de decisão.md` → `raw/core-knowledge/Árvores de decisão.md` ✅
+- `Clippings/Tutorial sobre classificação por árvore de decisão em Python.md` → `raw/core-knowledge/Tutorial sobre classificação por árvore de decisão em Python.md` ✅
+
+### Auditoria de Integridade
+- ✅ Nenhuma nota órfã detectada
+- ✅ Todos os links `[[]]` apontam para arquivos existentes
+- ✅ `original_source` atualizado com todas as 4 fontes (1 original + 3 novas)
+- ✅ `Clippings/` agora está vazia (backlog limpo)
+- ✅ `index.md` não requer atualização (árvore de decisão já catalogada)

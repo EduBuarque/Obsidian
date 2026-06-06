@@ -54,4 +54,5 @@ graph LR
     KT -->|"Kernel PCA usa"| DM
     KDD -->|"Inclui fase de"| DM
     AD -->|"Prioriza interpretabilidade no passo 6 de"| KDD
+    AD -->|"Ensembles usados no passo 7 de"| KDD
 ```

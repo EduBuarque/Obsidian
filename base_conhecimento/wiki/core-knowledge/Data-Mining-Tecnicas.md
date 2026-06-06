@@ -94,7 +94,7 @@ mindmap
 
 | Técnica                                   | Forças                                                    | Fraquezas                                                         | Cenários Indicados                                  |
 | ----------------------------------------- | --------------------------------------------------------- | ----------------------------------------------------------------- | --------------------------------------------------- |
-| **Árvores de Decisão** (CART, C4.5)       | Alta interpretabilidade, visualização, aceita cat. e num. | Instável, tende ao overfitting                                    | Crédito, saúde, sistemas explicáveis                |
+| **[[Arvores-de-Decisao\|Árvores de Decisão]]** (CART, C4.5) | Alta interpretabilidade, visualização, aceita cat. e num. | Instável, tende ao overfitting                                    | Crédito, saúde, sistemas explicáveis                |
 | **Random Forest**                         | Excelente performance, reduz overfitting, robusto a ruído | Menor interpretabilidade, custo computacional                     | Score de risco, dados tabulares                     |
 | **Gradient Boosting** (XGBoost, LightGBM) | Altíssima performance, dados tabulares                    | Sensível a hiperparâmetros, pode overfittar sem [[Regularizacao]] | Finanças, fraude, churn                             |
 | **Naïve Bayes**                           | Muito rápido, funciona bem com texto                      | Assume independência (forte suposição)                            | Spam, NLP, categorização — ver [[Teorema-de-Bayes]] |
